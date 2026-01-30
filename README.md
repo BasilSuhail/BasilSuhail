@@ -1,9 +1,15 @@
 # Hi there, I'm Basil 👋
 
-### 🚀 Financial Systems Architect & Data Scientist
-I bridge the gap between **Corporate Finance** and **Software Engineering**. I build "White-Box" financial systems, automated logic engines, and risk intelligence platforms that replace fragile spreadsheets with scalable code.
+<p align="left">
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID" target="blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
+  <a href="https://basilsuhail.com/" target="blank"><img src="https://img.shields.io/badge/Website-basilsuhail.com-black?style=for-the-badge&logo=google-chrome&logoColor=white" alt="website" /></a>
+  <a href="mailto:basilsuhail3@gmail.com" target="blank"><img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="email" /></a>
+</p>
 
-- 🔭 I’m currently working on **Algorithmic Market Intelligence** & **Budgeting Automation Engines**
+### 🚀 Finance, Data & ML Generalist
+I am a hybrid professional bridging the gap between **Corporate Finance** and **Data Science**. Instead of sticking to one domain, I leverage a diverse toolkit—from Financial Modeling and ERPs to Machine Learning and Full-Stack Development—to solve complex business problems.
+
+- 🔭 I’m currently working on **Algorithmic Market Intelligence** & **Budgeting Automation**
 - 🎓 MSc Data Science & Business Management @ **University of Aberdeen**
 - 💼 Former Assistant Accountant @ **Dubizzle Group**
 
@@ -17,16 +23,16 @@ I bridge the gap between **Corporate Finance** and **Software Engineering**. I b
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-**Frameworks & Web**
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-
 **Data Science & AI**
 ![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![SciKit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini_AI-8E75B2?style=for-the-badge&logo=google-bard&logoColor=white)
+
+**Web & Automation**
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 **Financial Systems**
 ![Microsoft Dynamics 365](https://img.shields.io/badge/Dynamics_365-blue?style=for-the-badge&logo=microsoft)
@@ -59,12 +65,3 @@ I bridge the gap between **Corporate Finance** and **Software Engineering**. I b
 
 ![Basil's GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=dark)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=dark)
-
----
-
-### 📫 Connect with Me
-<p align="left">
-<a href="https://linkedin.com/in/YOUR_LINKEDIN_ID" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" /></a>
-<a href="mailto:basilsuhail3@gmail.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/mail.svg" alt="email" height="30" width="40" /></a>
-<a href="YOUR_PORTFOLIO_LINK" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-Visit%20Site-blue?style=for-the-badge" alt="website" height="30" /></a>
-</p>
