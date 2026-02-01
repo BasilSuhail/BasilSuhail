@@ -27,11 +27,11 @@ I bridge the gap between data science and accounting — building tools that mak
 
 ```python
 basil = {
-    "location": "Aberdeen, Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "location": "Aberdeen, Scotland",
     "studying": "MSc Data Science & Business Management",
-    "background": "Accounting & Finance (BSc) + 1yr at Dubizzle Group",
-    "building": "AI-powered financial tools & automated reporting",
-    "tools": ["Sage 300", "Microsoft Dynamics 365", "Python", "React"]
+    "background": "Accounting & Finance + 1yr at Dubizzle Group",
+    "building": "AI-powered financial tools & automation",
+    "passion": "Making finance smarter with data"
 }
 ```
 
