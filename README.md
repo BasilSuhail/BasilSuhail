@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hey, I'm Basil 👋
+# Hey, I'm Basil
 
 **Data Science × Finance | MSc Student @ University of Aberdeen**
 
@@ -23,17 +23,13 @@ I bridge the gap between data science and accounting — building tools that mak
 
 ---
 
-### A Bit About Me
+### About Me
 
-```python
-basil = {
-    "location": "Aberdeen, Scotland",
-    "studying": "MSc Data Science & Business Management",
-    "background": "Accounting & Finance + 1yr at Dubizzle Group",
-    "building": "AI-powered financial tools & automation",
-    "passion": "Making finance smarter with data"
-}
-```
+MSc Data Science & Business Management — University of Aberdeen
+
+Previously: Accounting & Finance (BSc) • Assistant Accountant @ Dubizzle Group
+
+Currently building AI-powered financial tools & automation
 
 ---
 
