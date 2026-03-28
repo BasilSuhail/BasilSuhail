@@ -20,6 +20,8 @@ I build AI powered financial tools that translate messy real world data into dec
 
 **Active Projects**
 
+**[HomeForge: The Self-Hosted Digital Hub](https://github.com/BasilSuhail/ProjectS-HomeForge)** — A unified, privacy-first operating system for home servers that orchestrates the best open-source tools into a single, high-performance interface. Built with Next.js 15 and a nested Docker-in-Docker (DinD) architecture, it seamlessly integrates Jellyfin, Nextcloud, Matrix, and Theia IDE. Features a custom local-first AI module (**deer-flow**) for private, agentic research and financial sentiment analysis. Standardized on the Functional Source License (FSL-1.1) for sustainable commercial viability.
+
 **[Bloomberg Style News Intelligence Platform](https://github.com/BasilSuhail/news-intelligence-platform)** — A 4 layer pipeline that processes 500 to 1000 financial articles daily using FinBERT sentiment analysis, TF-IDF clustering, named entity recognition, and a Geopolitical Risk Index engine. Idempotent caching cut LLM API costs by 90 percent. Backtests sentiment predictions against real market data. Live at [basilsuhail.com/market-intelligence](https://basilsuhail.com/market-intelligence).
 
 **[Budgeting Schedule Automation Engine](https://github.com/BasilSuhail/Budgeting_Schedule_Automation)** — Replaces Excel based master budgets with a logic driven TypeScript and Python system that programmatically links 13 financial schedules from sales forecasts all the way to the final cash flow statement. Handles inflation adjustments and inter-schedule dependencies automatically. Reduces complex budget revision time by 90 percent.
