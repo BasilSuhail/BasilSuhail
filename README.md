@@ -1,82 +1,189 @@
-# Hi, I'm Basil Suhail
+<div align="center">
 
-**AI Developer · Data Scientist · Finance Background**
+# Basil Suhail
 
-I sit at the intersection of financial logic and AI engineering. Four years in accounting and finance (Dubizzle Group, Parwaaz Financial Services) taught me where spreadsheets break down and where data lies. Now I build the tools that replace them.
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1500&color=58A6FF&center=true&vCenter=true&repeat=true&width=435&height=35&lines=AI+Developer;Data+Scientist;Finance+Engineer;Building+where+spreadsheets+break+down" alt="Typing SVG" /></a>
 
-Currently finishing an MSc in Data Science and Business Management at the University of Aberdeen. Based in Aberdeen, open to remote and UK roles.
+**I sit at the intersection of financial logic and AI engineering.**
+<br/>
+Four years in accounting and finance taught me where data lies. Now I build the tools that replace them.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://basilsuhail.com)
+<br/>
+
+[![Portfolio](https://img.shields.io/badge/basilsuhail.com-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://basilsuhail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/basilsuhail)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:basilsuhailkhan@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BasilSuhail)
-[![University of Aberdeen](https://img.shields.io/badge/University_of_Aberdeen-00539B?style=for-the-badge&logo=academia&logoColor=white)](https://www.abdn.ac.uk)
+
+</div>
 
 ---
 
-## What I Build
+### What I Build
 
-I build AI powered financial tools that translate messy real world data into decisions. My niche is the gap between traditional finance operations and modern ML infrastructure — a space most developers have never worked in and most accountants cannot code their way out of.
+> AI powered financial tools that translate messy real world data into decisions. My niche is the gap between traditional finance operations and modern ML infrastructure.
 
-**Active Projects**
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**[HomeForge: The Self-Hosted Digital Hub](https://github.com/BasilSuhail/ProjectS-HomeForge)** — A unified, privacy-first operating system for home servers that orchestrates the best open-source tools into a single, high-performance interface. Built with Next.js 15 and a nested Docker-in-Docker (DinD) architecture, it seamlessly integrates Jellyfin, Nextcloud, Matrix, and Theia IDE. Features a custom local-first AI module (**deer-flow**) for private, agentic research and financial sentiment analysis. Standardized on the Functional Source License (FSL-1.1) for sustainable commercial viability.
+**[HomeForge: Self-Hosted Digital Hub](https://github.com/BasilSuhail/ProjectS-HomeForge)**
+<br/>
+A privacy-first operating system for home servers. Next.js 15, nested Docker-in-Docker architecture, integrating Jellyfin, Nextcloud, Matrix, and Theia IDE. Features **deerflow**, a local-first AI module for private agentic research and financial sentiment analysis.
 
-**[Bloomberg Style News Intelligence Platform](https://github.com/BasilSuhail/news-intelligence-platform)** — A 4 layer pipeline that processes 500 to 1000 financial articles daily using FinBERT sentiment analysis, TF-IDF clustering, named entity recognition, and a Geopolitical Risk Index engine. Idempotent caching cut LLM API costs by 90 percent. Backtests sentiment predictions against real market data. Live at [basilsuhail.com/market-intelligence](https://basilsuhail.com/market-intelligence).
+</td>
+<td width="50%" valign="top">
 
-**[Budgeting Schedule Automation Engine](https://github.com/BasilSuhail/Budgeting_Schedule_Automation)** — Replaces Excel based master budgets with a logic driven TypeScript and Python system that programmatically links 13 financial schedules from sales forecasts all the way to the final cash flow statement. Handles inflation adjustments and inter-schedule dependencies automatically. Reduces complex budget revision time by 90 percent.
+**[Bloomberg Style News Intelligence](https://github.com/BasilSuhail/news-intelligence-platform)**
+<br/>
+4-layer pipeline processing **500-1000 financial articles daily**. FinBERT sentiment, TF-IDF clustering, NER, and a Geopolitical Risk Index engine. Idempotent caching cut LLM API costs by **90%**. Backtests predictions against real market data.
+<br/>
+[**Live →**](https://basilsuhail.com/market-terminal)
 
-**[AI Interview Coaching Application](https://github.com/BasilSuhail/BasilSuhail)** — RAG powered coaching app using LLaMA that ingests job-specific documentation and interview patterns to generate personalised feedback grounded in current industry requirements.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**[Full Stack Portfolio and Custom CMS](https://basilsuhail.com)** — React and TypeScript and Node.js with a custom CMS, FastAPI backend, and Supabase for data management. Integrates Tableau and PowerBI visualisations inline.
+**[Budgeting Schedule Automation](https://github.com/BasilSuhail/Budgeting_Schedule_Automation)**
+<br/>
+Replaces Excel master budgets with logic-driven TypeScript + Python. Programmatically links **13 financial schedules** from sales forecasts to cash flow statements. Handles inflation adjustments automatically. Cuts budget revision time by **90%**.
+
+</td>
+<td width="50%" valign="top">
+
+**[AI Interview Coach](https://github.com/BasilSuhail/BasilSuhail)**
+<br/>
+RAG-powered coaching app using LLaMA that ingests job-specific documentation and interview patterns to generate personalised feedback grounded in current industry requirements.
+
+</td>
+</tr>
+</table>
+
+**Also building:** [deerflow](https://github.com/BasilSuhail/ProjectS-HomeForge) — research and task management engine for HomeForge | [Felix 🦊](https://github.com/BasilSuhail) — terminal agent launcher for macOS | Custom Gemini + Claude skills and MCP tools for agentic workflows | [Full Stack Portfolio + CMS](https://basilsuhail.com) — React, TypeScript, Node.js, FastAPI, Supabase
 
 ---
 
-## Tech Stack
+### Tech Stack
+
+<div align="center">
 
 [![](https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs&theme=dark)](https://skillicons.dev)
 [![](https://skillicons.dev/icons?i=fastapi,supabase,postgres,sqlite,docker,git&theme=dark)](https://skillicons.dev)
 [![](https://skillicons.dev/icons?i=tailwind,vite,vercel,github,vscode,linux&theme=dark)](https://skillicons.dev)
 
-| Category | Technologies |
-|---|---|
-| **Languages** | Python, TypeScript, JavaScript, SQL |
-| **AI and ML** | FinBERT, LLaMA, RAG, Gemini, BERT, Groq, Sentence Transformers, TF-IDF, Wolfram Mathematica |
-| **Backend** | FastAPI, Node.js, Express.js, SQLite, PostgreSQL |
-| **Frontend** | React, Next.js, React Native, Tailwind CSS, Framer Motion, Recharts |
-| **Finance Systems** | Sage 300, Sage 50, Microsoft Dynamics 365, Excel Advanced, IFRS |
-| **Visualisation** | Tableau, PowerBI, Next.js Dashboards |
-| **Infrastructure** | Supabase, Vercel, Docker, GitHub Actions |
+</div>
+
+**AI/ML** · FinBERT · LLaMA · RAG · Gemini · BERT · Groq · Sentence Transformers · TF-IDF · MCP
+<br/>
+**Finance** · Sage 300 · Sage 50 · Microsoft Dynamics 365 · Advanced Excel · IFRS
+<br/>
+**Viz** · Tableau · PowerBI · Recharts · Framer Motion
 
 ---
 
-## Background
+### GitHub Activity
 
-Before writing code full time I spent two years inside real finance operations.
+<div align="center">
 
-At **Dubizzle Group** (Dubai's largest classifieds platform) I managed over 1000 daily receivables across 3 CRMs and 6 banks, streamlined Sage 300 workflows cutting processing time by 25 percent, and maintained reconciliations with a 95 percent discrepancy resolution rate. That experience wired in a precision standard that shows up in everything I build now.
+<img src="https://streak-stats.demolab.com?user=BasilSuhail&theme=github-dark-blue&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" width="52%" />
 
-At **Parwaaz Financial Services** I executed depreciation schedules for 200 plus assets, processed monthly transactions in Microsoft Dynamics 365, and ran variance analysis across 60 client accounts and 20 investment portfolios.
+</div>
 
-The practical upshot is that my AI tools are built by someone who has actually felt the pain they are solving.
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=BasilSuhail&theme=github-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=58a6ff" width="95%" />
+
+</div>
+
+<!--
+NOTE: github-readme-stats (stats card + top languages) uses a public Vercel
+instance that is frequently rate-limited and returns broken images.
+
+To get reliable stats cards, self-host via GitHub Actions:
+1. Fork https://github.com/anuraghazra/github-readme-stats
+2. Deploy to your own Vercel account (free)
+3. Replace the URLs below with your deployment URL
+
+Once self-hosted, uncomment these:
+<img src="https://YOUR-DEPLOYMENT.vercel.app/api?username=BasilSuhail&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" width="49%" />
+<img src="https://YOUR-DEPLOYMENT.vercel.app/api/top-langs/?username=BasilSuhail&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" width="42%" />
+-->
+
+<!-- Contribution Snake (requires GitHub Action setup — see setup notes at bottom) -->
+<!-- <img src="https://raw.githubusercontent.com/BasilSuhail/BasilSuhail/output/github-contribution-grid-snake-dark.svg" width="100%" /> -->
 
 ---
 
-## Education
+### Background
 
-**MSc Data Science and Business Management** · University of Aberdeen · 2025 to 2026
-
-**BSc Accounting and Finance** · University of Management and Technology · 2020 to 2024
-Rector's Merit Award (2024) · Dean's Merit Award (2021)
-
-**Certifications** · Business Intelligence Analyst (Udemy 2026) · McKinsey Forward Program (2024) · Wolfram Proficiency and Machine Learning · LinkedIn Analytics Foundations
+MSc Data Science and Business Management at the **University of Aberdeen** (2025–2026). Previously: BSc Accounting and Finance with Rector's Merit Award. Two years inside real finance operations at **Dubizzle Group** managing 1000+ daily receivables across 3 CRMs and 6 banks, and at **Parwaaz Financial Services** running depreciation schedules and variance analysis. The practical upshot: my AI tools are built by someone who has actually felt the pain they solve.
 
 ---
 
-## Let's Talk
+<div align="center">
 
-I am actively looking for roles across the UK and globally in AI development, data science, or fintech. Available for freelance projects and open to conversations about anything at the intersection of finance and AI.
+**Actively looking for AI development, data science, and fintech roles across the UK and globally.**
 
-[![Email](https://img.shields.io/badge/Email-basilsuhailkhan%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:basilsuhailkhan@gmail.com)
-[![Portfolio](https://img.shields.io/badge/basilsuhail.com-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://basilsuhail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/basilsuhail)
+[![Let's Talk](https://img.shields.io/badge/Let's_Talk_→_basilsuhail.com-58A6FF?style=for-the-badge)](https://basilsuhail.com)
+
+</div>
+
+<!--
+=============================================================
+SETUP NOTES (delete this block after configuring)
+=============================================================
+
+1. TYPING SVG
+   Customize at: https://readme-typing-svg.demolab.com/demo/
+   Change text, speed, colors to your preference.
+
+2. GITHUB STATS / STREAK
+   The stats cards use public Vercel instances. For reliability,
+   consider self-hosting via GitHub Actions:
+   - https://github.com/anuraghazra/github-readme-stats
+   - https://github.com/DenverCoder1/github-readme-streak-stats
+
+3. CONTRIBUTION SNAKE (optional)
+   To enable the snake animation:
+   a. Create .github/workflows/snake.yml in your profile repo:
+
+      name: Generate Snake
+      on:
+        schedule:
+          - cron: "0 */12 * * *"
+        workflow_dispatch:
+      jobs:
+        build:
+          runs-on: ubuntu-latest
+          steps:
+            - uses: Platane/snk@master
+              with:
+                github_user_name: BasilSuhail
+                outputs: |
+                  dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            - uses: crazy-max/ghaction-github-pages@v2.1.3
+              with:
+                target_branch: output
+                build_dir: dist
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+   b. Run the workflow once manually
+   c. Uncomment the snake image line above
+
+4. PIN YOUR REPOS
+   Go to your GitHub profile → "Customize your pins"
+   Pin these repos:
+   - news-intelligence-platform
+   - ProjectS-HomeForge
+   - Budgeting_Schedule_Automation
+   - Your portfolio repo
+   - Any other strong project
+
+5. THEME
+   Everything uses GitHub Dark (#0d1117) with accent #58A6FF
+   to match GitHub's native dark mode. Change the hex values
+   throughout if you prefer a different accent color.
+
+=============================================================
+-->
