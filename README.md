@@ -2,7 +2,7 @@
 
 # Basil Suhail
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1500&color=58A6FF&center=true&vCenter=true&repeat=true&width=435&height=35&lines=AI+Developer;Data+Scientist;Finance+Engineer;Building+where+spreadsheets+break+down" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1500&color=58A6FF&center=true&vCenter=true&repeat=true&width=435&height=35&lines=AI+Developer;Data+Scientist;Finance+Engineer;Where+spreadsheets+break+down" alt="Typing SVG" /></a>
 
 **I sit at the intersection of financial logic and AI engineering.**
 <br/>
