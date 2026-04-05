@@ -29,6 +29,10 @@ Four years in accounting and finance taught me where data lies. Now I build the 
 **[HomeForge: Self-Hosted Digital Hub](https://github.com/BasilSuhail/ProjectS-HomeForge)**
 <br/>
 A privacy-first operating system for home servers. Next.js 15, nested Docker-in-Docker architecture, integrating Jellyfin, Nextcloud, Matrix, and Theia IDE. Features **deerflow**, a local-first AI module for private agentic research and financial sentiment analysis.
+<br/>
+**GitHub Repo:** [homelab-os-landing →](https://github.com/BasilSuhail/homelab-os-landing)
+<br/>
+**Live preview:** [View the landing page →](https://basilsuhail.github.io/homelab-os-landing)
 
 </td>
 <td width="50%" valign="top">
