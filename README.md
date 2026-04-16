@@ -26,13 +26,11 @@ Four years in accounting and finance taught me where data lies. Now I build the 
 <tr>
 <td width="50%" valign="top">
 
-**[HomeForge: Self-Hosted Digital Hub](https://github.com/BasilSuhail/ProjectS-HomeForge)**
+**[dhobs: Self-Hosted Digital Hub](https://basilsuhail.github.io/dhobs/)**
 <br/>
-A privacy-first operating system for home servers. Next.js 15, nested Docker-in-Docker architecture, integrating Jellyfin, Nextcloud, Matrix, and Theia IDE. Features **deerflow**, a local-first AI module for private agentic research and financial sentiment analysis.
+HomeForge aka **dhobs**. A privacy-first operating system for home servers. Next.js 15, nested Docker-in-Docker architecture, integrating Jellyfin, Nextcloud, Matrix, and Theia IDE. Features **deerflow**, a local-first AI module for private agentic research and financial sentiment analysis.
 <br/>
-**GitHub Repo:** [homelab-os-landing →](https://github.com/BasilSuhail/homelab-os-landing)
-<br/>
-**Live preview:** [View the landing page →](https://basilsuhail.github.io/ProjectS-HomeForge/)
+**Live preview:** [View the landing page →](https://basilsuhail.github.io/dhobs/)
 
 </td>
 <td width="50%" valign="top">
@@ -63,7 +61,7 @@ RAG-powered coaching app using LLaMA that ingests job-specific documentation and
 </tr>
 </table>
 
-**Also building:** [deerflow](https://github.com/BasilSuhail/ProjectS-HomeForge) — research and task management engine for HomeForge | [Felix 🦊](https://github.com/BasilSuhail) — terminal agent launcher for macOS | Custom Gemini + Claude skills and MCP tools for agentic workflows | [Full Stack Portfolio + CMS](https://basilsuhail.com) — React, TypeScript, Node.js, FastAPI, Supabase
+**Also building:** [GitHub Protocols](https://github.com/BasilSuhail/github-protocols-basil) — custom agentic standards & protocols for AI developers | [deerflow](https://github.com/BasilSuhail/ProjectS-HomeForge) — research and task management engine for HomeForge | [Felix 🦊](https://github.com/BasilSuhail) — terminal agent launcher for macOS | Custom Gemini + Claude skills and MCP tools | [Full Stack Portfolio + CMS](https://basilsuhail.com) — React, TypeScript, Node.js, FastAPI, Supabase
 
 ---
 
