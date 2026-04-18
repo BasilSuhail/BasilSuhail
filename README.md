@@ -128,6 +128,12 @@ MSc Data Science and Business Management at the **University of Aberdeen** (2025
 
 [![Let's Talk](https://img.shields.io/badge/Let's_Talk_→_basilsuhail.com-58A6FF?style=for-the-badge)](https://basilsuhail.com)
 
+
+
+https://github.com/user-attachments/assets/70dab03f-5a54-4b34-968b-976b9e067907
+
+
+
 </div>
 
 <!--
