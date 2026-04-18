@@ -120,15 +120,17 @@ Once self-hosted, uncomment these:
 
 MSc Data Science and Business Management at the **University of Aberdeen** (2025–2026). Previously: BSc Accounting and Finance with Rector's Merit Award. Two years inside real finance operations at **Dubizzle Group** managing 1000+ daily receivables across 3 CRMs and 6 banks, and at **Parwaaz Financial Services** running depreciation schedules and variance analysis. The practical upshot: my AI tools are built by someone who has actually felt the pain they solve.
 
+
+
+<div align="center">
+
+[![Let's Talk](https://img.shields.io/badge/Let's_Talk_→_basilsuhail.com-58A6FF?style=for-the-badge)](https://basilsuhail.com)
+
 ---
 
 <div align="center">
 
-**Actively looking for AI development, data science, and fintech roles across the UK and globally.**
-
-[![Let's Talk](https://img.shields.io/badge/Let's_Talk_→_basilsuhail.com-58A6FF?style=for-the-badge)](https://basilsuhail.com)
-
-
+**POV: you catch your cofounder spending 45 seconds on his personal life instead of our AI startup...**
 
 https://github.com/user-attachments/assets/70dab03f-5a54-4b34-968b-976b9e067907
 
