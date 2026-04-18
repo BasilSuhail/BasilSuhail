@@ -26,7 +26,7 @@ Four years in accounting and finance taught me where data lies. Now I build the 
 <tr>
 <td width="50%" valign="top">
 
-**[dhobs: Self-Hosted Digital Hub](https://basilsuhail.github.io/dhobs/)**
+**[dhobs: Self-Hosted Digital Hub](https://github.com/dlobs-co/dhobs)**
 <br/>
 HomeForge aka **dhobs**. A privacy-first operating system for home servers. Next.js 15, nested Docker-in-Docker architecture, integrating Jellyfin, Nextcloud, Matrix, and Theia IDE. Features **deerflow**, a local-first AI module for private agentic research and financial sentiment analysis.
 <br/>
