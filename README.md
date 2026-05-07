@@ -80,6 +80,8 @@ RAG-powered coaching app using LLaMA that ingests job-specific documentation and
 **Finance** · Sage 300 · Sage 50 · Microsoft Dynamics 365 · Advanced Excel · IFRS
 <br/>
 **Viz** · Tableau · PowerBI · Recharts · Framer Motion
+<br/>
+**Certifications** · Anthropic API · Claude Code · Model Context Protocol · Agent Skills · Power BI · McKinsey Forward
 
 ---
 
@@ -118,7 +120,7 @@ Once self-hosted, uncomment these:
 
 ### Background
 
-MSc Data Science and Business Management at the **University of Aberdeen** (2025–2026). Previously: BSc Accounting and Finance with Rector's Merit Award. Two years inside real finance operations at **Dubizzle Group** managing 1000+ daily receivables across 3 CRMs and 6 banks, and at **Parwaaz Financial Services** running depreciation schedules and variance analysis. The practical upshot: my AI tools are built by someone who has actually felt the pain they solve.
+MSc Data Science and Business Management at the **University of Aberdeen** (2025–2026). Previously: BSc Accounting and Finance with Rector's Merit Award. Consulted at **CAG Consultants** on market strategy and carbon benchmarking for a nature/biodiversity practice. Two years inside real finance operations at **Dubizzle Group** managing 1000+ daily receivables across 3 CRMs and 6 banks, and at **Parwaaz Financial Services** running depreciation schedules and variance analysis. The practical upshot: my AI tools are built by someone who has actually felt the pain they solve.
 
 
 
