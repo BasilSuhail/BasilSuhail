@@ -54,10 +54,10 @@ text, tspan {white-space: pre;}
 <tspan x="418" y="30" textLength="590.0" lengthAdjust="spacing"><tspan>basil@suhail</tspan> -——————————————————————————————————————————-—-</tspan>
 <tspan x="418" y="50" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ................................ </tspan><tspan class="value">macOS / Raspberry Pi OS</tspan></tspan>
 <tspan x="418" y="70" textLength="520.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">26 years, 7 months, 0 days,</tspan></tspan>
-<tspan x="418" y="90" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">MacBook Pro / Raspberry Pi</tspan></tspan>
-<tspan x="418" y="110" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">basil-ai 4.2.0-fintech</tspan></tspan>
+<tspan x="418" y="90" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> .................................. </tspan><tspan class="value">Edinburgh, Scotland</tspan></tspan>
+<tspan x="418" y="110" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">finance-ops 4.0.0-LTS</tspan></tspan>
 <tspan x="418" y="130" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Shell</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">freelance 2.0 (AI dev, data, fintech)</tspan></tspan>
-<tspan x="418" y="150" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Locale</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">en_GB.UTF-8 (Edinburgh, UK)</tspan></tspan>
+<tspan x="418" y="150" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Locale</tspan>:<tspan class="cc"> ........................................ </tspan><tspan class="value">en_GB.UTF-8</tspan></tspan>
 <tspan x="418" y="170" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Packages</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">2 (degrees), 9 (certs), 2 (awards)</tspan></tspan>
 <tspan x="418" y="190" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">VS Code, Antigravity, Warp, Claude Code</tspan></tspan>
 <tspan x="418" y="210" textLength="20.0" lengthAdjust="spacing"><tspan class="cc">. </tspan></tspan>
@@ -67,7 +67,7 @@ text, tspan {white-space: pre;}
 <tspan x="418" y="290" textLength="20.0" lengthAdjust="spacing"><tspan class="cc">. </tspan></tspan>
 <tspan x="418" y="310" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Software</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">agentic pipelines, self-hosting, OSINT</tspan></tspan>
 <tspan x="418" y="330" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">Raspberry Pi homelab, home servers</tspan></tspan>
-<tspan x="418" y="350" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Offline</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">endurance running, triathlon</tspan></tspan>
+<tspan x="418" y="350" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Offline</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">running, triathlon, touching grass</tspan></tspan>
 <tspan x="418" y="370" textLength="20.0" lengthAdjust="spacing"><tspan class="cc">. </tspan></tspan>
 <tspan x="418" y="390" textLength="590.0" lengthAdjust="spacing"><tspan>- Contact</tspan> -—————————————————————————————————————————————-—-</tspan>
 <tspan x="418" y="410" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Personal</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">basilsuhailkhan@gmail.com</tspan></tspan>
@@ -75,154 +75,154 @@ text, tspan {white-space: pre;}
 <tspan x="418" y="450" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="cc"> ...................................... </tspan><tspan class="value">basilsuhail</tspan></tspan>
 <tspan x="418" y="470" textLength="20.0" lengthAdjust="spacing"><tspan class="cc">. </tspan></tspan>
 <tspan x="418" y="490" textLength="590.0" lengthAdjust="spacing"><tspan>- GitHub Stats</tspan> -————————————————————————————————————————-—-</tspan>
-<tspan x="418" y="510" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> .................................................. </tspan><tspan class="value">19</tspan></tspan>
-<tspan x="418" y="530" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>.<tspan class="key">Contributed</tspan>:<tspan class="cc"> ...................................... </tspan><tspan class="value">21</tspan></tspan>
-<tspan x="418" y="550" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ............................................. </tspan><tspan class="value">1,255</tspan></tspan>
-<tspan x="418" y="570" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">13,158,104</tspan></tspan>
-<tspan x="418" y="590" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Lines of Code</tspan>.<tspan class="key">Churn</tspan>:<tspan class="cc"> ............. </tspan><tspan class="addColor">14,925,811++</tspan>, <tspan class="delColor">1,767,707--</tspan></tspan>
+<tspan x="418" y="510" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> .................................................. </tspan><tspan class="value">34</tspan></tspan>
+<tspan x="418" y="530" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>.<tspan class="key">Contributed</tspan>:<tspan class="cc"> ...................................... </tspan><tspan class="value">43</tspan></tspan>
+<tspan x="418" y="550" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>:<tspan class="cc"> ....................................... </tspan><tspan class="value">3,160</tspan></tspan>
+<tspan x="418" y="570" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">14,504,976</tspan></tspan>
+<tspan x="418" y="590" textLength="620.0" lengthAdjust="spacing"><tspan class="cc">. </tspan><tspan class="key">Lines of Code</tspan>.<tspan class="key">Churn</tspan>:<tspan class="cc"> ............. </tspan><tspan class="addColor">16,309,576++</tspan>, <tspan class="delColor">1,804,600--</tspan></tspan>
 </text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="1" style="animation-delay:-22.000s">00:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-82822.000s">01:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-79222.000s">02:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-75622.000s">03:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-72022.000s">04:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-68422.000s">05:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-64822.000s">06:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-61222.000s">07:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-57622.000s">08:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-54022.000s">09:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-50422.000s">10:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-46822.000s">11:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-43222.000s">12:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-39622.000s">13:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-36022.000s">14:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-32422.000s">15:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-28822.000s">16:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-25222.000s">17:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-21622.000s">18:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-18022.000s">19:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-14422.000s">20:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-10822.000s">21:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-7222.000s">22:</text>
-<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-3622.000s">23:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="1" style="animation-delay:-22.000s">00:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3562.000s">01:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3502.000s">02:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3442.000s">03:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3382.000s">04:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3322.000s">05:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3262.000s">06:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3202.000s">07:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3142.000s">08:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3082.000s">09:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3022.000s">10:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2962.000s">11:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2902.000s">12:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2842.000s">13:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2782.000s">14:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2722.000s">15:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2662.000s">16:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2602.000s">17:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2542.000s">18:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2482.000s">19:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2422.000s">20:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2362.000s">21:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2302.000s">22:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2242.000s">23:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2182.000s">24:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2122.000s">25:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2062.000s">26:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2002.000s">27:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1942.000s">28:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1882.000s">29:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1822.000s">30:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1762.000s">31:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1702.000s">32:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1642.000s">33:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1582.000s">34:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1522.000s">35:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1462.000s">36:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1402.000s">37:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1342.000s">38:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1282.000s">39:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1222.000s">40:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1162.000s">41:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1102.000s">42:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1042.000s">43:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-982.000s">44:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-922.000s">45:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-862.000s">46:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-802.000s">47:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-742.000s">48:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-682.000s">49:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-622.000s">50:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-562.000s">51:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-502.000s">52:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-442.000s">53:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-382.000s">54:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-322.000s">55:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-262.000s">56:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-202.000s">57:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-142.000s">58:</text>
-<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-82.000s">59:</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-22.000s">00</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-21.000s">01</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-20.000s">02</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-19.000s">03</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-18.000s">04</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-17.000s">05</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-16.000s">06</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-15.000s">07</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-14.000s">08</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-13.000s">09</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-12.000s">10</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-11.000s">11</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-10.000s">12</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-9.000s">13</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-8.000s">14</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-7.000s">15</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-6.000s">16</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-5.000s">17</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-4.000s">18</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-3.000s">19</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-2.000s">20</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-1.000s">21</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="1" style="animation-delay:0.000s">22</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-59.000s">23</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-58.000s">24</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-57.000s">25</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-56.000s">26</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-55.000s">27</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-54.000s">28</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-53.000s">29</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-52.000s">30</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-51.000s">31</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-50.000s">32</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-49.000s">33</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-48.000s">34</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-47.000s">35</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-46.000s">36</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-45.000s">37</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-44.000s">38</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-43.000s">39</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-42.000s">40</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-41.000s">41</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-40.000s">42</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-39.000s">43</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-38.000s">44</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-37.000s">45</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-36.000s">46</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-35.000s">47</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-34.000s">48</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-33.000s">49</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-32.000s">50</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-31.000s">51</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-30.000s">52</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-29.000s">53</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-28.000s">54</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-27.000s">55</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-26.000s">56</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-25.000s">57</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-24.000s">58</text>
-<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-23.000s">59</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-3840.000s">00:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="1" style="animation-delay:-240.000s">01:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-83040.000s">02:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-79440.000s">03:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-75840.000s">04:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-72240.000s">05:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-68640.000s">06:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-65040.000s">07:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-61440.000s">08:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-57840.000s">09:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-54240.000s">10:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-50640.000s">11:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-47040.000s">12:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-43440.000s">13:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-39840.000s">14:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-36240.000s">15:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-32640.000s">16:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-29040.000s">17:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-25440.000s">18:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-21840.000s">19:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-18240.000s">20:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-14640.000s">21:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-11040.000s">22:</text>
+<text x="968.0" y="70" class="value h24" text-anchor="end" opacity="0" style="animation-delay:-7440.000s">23:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-240.000s">00:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-180.000s">01:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-120.000s">02:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-60.000s">03:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="1" style="animation-delay:0.000s">04:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3540.000s">05:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3480.000s">06:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3420.000s">07:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3360.000s">08:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3300.000s">09:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3240.000s">10:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3180.000s">11:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3120.000s">12:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3060.000s">13:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-3000.000s">14:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2940.000s">15:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2880.000s">16:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2820.000s">17:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2760.000s">18:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2700.000s">19:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2640.000s">20:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2580.000s">21:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2520.000s">22:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2460.000s">23:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2400.000s">24:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2340.000s">25:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2280.000s">26:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2220.000s">27:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2160.000s">28:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2100.000s">29:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-2040.000s">30:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1980.000s">31:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1920.000s">32:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1860.000s">33:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1800.000s">34:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1740.000s">35:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1680.000s">36:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1620.000s">37:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1560.000s">38:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1500.000s">39:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1440.000s">40:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1380.000s">41:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1320.000s">42:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1260.000s">43:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1200.000s">44:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1140.000s">45:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1080.000s">46:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-1020.000s">47:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-960.000s">48:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-900.000s">49:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-840.000s">50:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-780.000s">51:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-720.000s">52:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-660.000s">53:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-600.000s">54:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-540.000s">55:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-480.000s">56:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-420.000s">57:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-360.000s">58:</text>
+<text x="998.0" y="70" class="value m60" text-anchor="end" opacity="0" style="animation-delay:-300.000s">59:</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="1" style="animation-delay:0.000s">00</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-59.000s">01</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-58.000s">02</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-57.000s">03</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-56.000s">04</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-55.000s">05</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-54.000s">06</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-53.000s">07</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-52.000s">08</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-51.000s">09</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-50.000s">10</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-49.000s">11</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-48.000s">12</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-47.000s">13</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-46.000s">14</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-45.000s">15</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-44.000s">16</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-43.000s">17</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-42.000s">18</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-41.000s">19</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-40.000s">20</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-39.000s">21</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-38.000s">22</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-37.000s">23</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-36.000s">24</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-35.000s">25</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-34.000s">26</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-33.000s">27</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-32.000s">28</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-31.000s">29</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-30.000s">30</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-29.000s">31</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-28.000s">32</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-27.000s">33</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-26.000s">34</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-25.000s">35</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-24.000s">36</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-23.000s">37</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-22.000s">38</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-21.000s">39</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-20.000s">40</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-19.000s">41</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-18.000s">42</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-17.000s">43</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-16.000s">44</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-15.000s">45</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-14.000s">46</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-13.000s">47</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-12.000s">48</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-11.000s">49</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-10.000s">50</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-9.000s">51</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-8.000s">52</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-7.000s">53</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-6.000s">54</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-5.000s">55</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-4.000s">56</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-3.000s">57</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-2.000s">58</text>
+<text x="1018.0" y="70" class="value s60" text-anchor="end" opacity="0" style="animation-delay:-1.000s">59</text>
 </svg>

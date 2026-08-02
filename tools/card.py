@@ -40,10 +40,12 @@ ROWS = [
     ("@header", "basil@suhail"),
     ("OS", "macOS / Raspberry Pi OS"),
     ("@uptime", None),
-    ("Host", "MacBook Pro / Raspberry Pi"),
-    ("Kernel", "basil-ai 4.2.0-fintech"),
+    # Host is where this runs, Kernel is what it is built on (four years of
+    # finance operations), Shell is the day job you actually interact with.
+    ("Host", "Edinburgh, Scotland"),
+    ("Kernel", "finance-ops 4.0.0-LTS"),
     ("Shell", "freelance 2.0 (AI dev, data, fintech)"),
-    ("Locale", "en_GB.UTF-8 (Edinburgh, UK)"),
+    ("Locale", "en_GB.UTF-8"),
     ("Packages", "2 (degrees), 9 (certs), 2 (awards)"),
     ("IDE", "VS Code, Antigravity, Warp, Claude Code"),
     (None, None),
@@ -53,7 +55,7 @@ ROWS = [
     (None, None),
     ("Hobbies.Software", "agentic pipelines, self-hosting, OSINT"),
     ("Hobbies.Hardware", "Raspberry Pi homelab, home servers"),
-    ("Hobbies.Offline", "endurance running, triathlon"),
+    ("Hobbies.Offline", "running, triathlon, touching grass"),
     (None, None),
     ("@rule", "Contact"),
     ("Email.Personal", "basilsuhailkhan@gmail.com"),
@@ -63,7 +65,7 @@ ROWS = [
     ("@rule", "GitHub Stats"),
     ("Repos", "@repos"),
     ("Repos.Contributed", "@contrib"),
-    ("Commits", "@commits"),
+    ("Contributions", "@contributions"),
     ("Lines of Code on GitHub", "@loc"),
     ("@churn", None),
 ]
