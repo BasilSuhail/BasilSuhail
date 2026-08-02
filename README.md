@@ -14,20 +14,24 @@ https://github.com/user-attachments/assets/70dab03f-5a54-4b34-968b-976b9e067907
 </div>
 
 <!--
-The card above is one SVG per theme, regenerated daily by .github/workflows/build.yaml.
+The card above is one SVG per theme, rebuilt every 30 minutes by
+.github/workflows/build.yaml.
 
-  today.py               rewrites the live values (uptime, repos, commits, lines of code)
-  tools/make_ascii.py    turns the GitHub avatar into the 39x25 ASCII portrait
-  tools/generate_card.py rebuilds both SVGs from the portrait + the field list
+  today.py            fetches the GitHub numbers, then calls tools/card.py
+  tools/card.py       builds both SVGs from the portrait + the field list
+  tools/make_ascii.py turns the GitHub avatar into the 39x25 ASCII portrait
 
-To change a field (OS, IDE, hobbies, contact), edit ROWS in tools/generate_card.py
-and re-run it -- do not hand-edit the SVGs, the dot alignment is computed.
+To change a field (OS, Host, Kernel, hobbies, contact), edit ROWS in tools/card.py
+and re-run today.py -- do not hand-edit the SVGs, they are overwritten wholesale
+and the dot alignment is computed.
+
+The Uptime hh:mm:ss ticks via SMIL animation, because a README image cannot run
+JavaScript. Its clock starts when the browser loads the image, so it is accurate
+to within one workflow run.
 
 Required repository secrets:
   ACCESS_TOKEN  fine-grained PAT, all repositories, read access to metadata + contents
   USER_NAME     BasilSuhail
-  BIRTHDAY      optional, YYYY-MM-DD. Without it, Uptime counts from the account
-                creation date instead.
 
 Card mechanics adapted from https://github.com/Andrew6rant/Andrew6rant
 -->
