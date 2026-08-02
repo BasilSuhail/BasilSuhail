@@ -35,8 +35,12 @@ jobs:
 
       - name: Update profile card
         env:
+          # ACCESS_TOKEN is optional: set it to a fine-grained PAT to count lines
+          # of code in private repos too. Unset, today.py falls back to
+          # GITHUB_TOKEN, which covers every public repository.
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          USER_NAME: ${{ secrets.USER_NAME }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USER_NAME: ${{ github.repository_owner }}
         run: python today.py
 
       - name: Commit
