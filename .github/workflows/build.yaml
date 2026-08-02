@@ -5,7 +5,10 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 4 * * *"
+    # The Uptime clock ticks from whenever the browser loads the image, so it is
+    # only as accurate as the last run. Every 30 minutes keeps the drift small.
+    # Drop this to "0 4 * * *" for one run a day if the commit noise is annoying.
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -34,7 +37,6 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: ${{ secrets.USER_NAME }}
-          BIRTHDAY: ${{ secrets.BIRTHDAY }}
         run: python today.py
 
       - name: Commit
