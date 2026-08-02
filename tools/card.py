@@ -23,7 +23,7 @@ from xml.sax.saxutils import escape
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
-W, H = 1000, 595
+W, H = 1050, 620
 TEXT_X = 418          # right column origin, clears the 39-col portrait
 WIDTH = 60            # right column width, in characters
 ASCII_X, ROW_H, TOP = 15, 20, 30
@@ -40,9 +40,10 @@ ROWS = [
     ("@header", "basil@suhail"),
     ("OS", "macOS / Raspberry Pi OS"),
     ("@uptime", None),
-    ("Host", "MacBook Pro M4 Pro (24 GB), Edinburgh UK"),
+    ("Host", "MacBook Pro / Raspberry Pi"),
     ("Kernel", "basil-ai 4.2.0-fintech"),
     ("Shell", "freelance 2.0 (AI dev, data, fintech)"),
+    ("Locale", "en_GB.UTF-8 (Edinburgh, UK)"),
     ("Packages", "2 (degrees), 9 (certs), 2 (awards)"),
     ("IDE", "VS Code, Antigravity, Warp, Claude Code"),
     (None, None),
@@ -80,7 +81,20 @@ def key_span(key):
     return ".".join(f'<tspan class="key">{escape(p)}</tspan>' for p in key.split("."))
 
 
-CHAR_W = 9.592   # Consolas advance at 16px with the 109% size-adjust above
+# Every line is pinned to exactly this much width per character. The card cannot
+# know which monospace font the viewer actually gets -- GitHub was rendering the
+# text about 10% wider than Consolas, which pushed the right-hand end of every
+# line outside the viewBox and cropped it -- so instead of trusting a metric, each
+# line carries a textLength and the renderer is made to fit it.
+CHAR_W = 10.0
+
+
+def fit(x, y, inner, chars):
+    """Place a line at (x, y) and force it to occupy exactly `chars` columns."""
+    if chars <= 1:
+        return f'<tspan x="{x}" y="{y}">{inner}</tspan>'
+    return (f'<tspan x="{x}" y="{y}" textLength="{chars * CHAR_W:.1f}"'
+            f' lengthAdjust="spacing">{inner}</tspan>')
 
 
 def odometer(frames, start_index, slot_seconds, phase, end_col, y, css_class):
@@ -132,11 +146,12 @@ def uptime_row(y, now):
     clock_cols = len(" HH:MM:SS") + 1
     pad = WIDTH - 2 - len("Uptime") - 1 - len(date_part) - 1 - clock_cols
     line = (
-        f'<tspan x="{TEXT_X}" y="{y}" class="cc">. </tspan>'
+        f'<tspan class="cc">. </tspan>'
         f'<tspan class="key">Uptime</tspan>:'
         f'<tspan class="cc">{dots(pad)}</tspan>'
         f'<tspan class="value">{escape(date_part)},</tspan>'
     )
+    plain = f". Uptime:{dots(pad)}{date_part},"
 
     two = [f"{i:02d}" for i in range(60)]
     extras = []
@@ -147,20 +162,27 @@ def uptime_row(y, now):
     extras += odometer([f"{m}:" for m in two], diff.minutes, 60, diff.seconds,
                        WIDTH - 2, y, "m60")
     extras += odometer(two, diff.seconds, 1, 0, WIDTH, y, "s60")
-    return line, extras
+    return line, plain, extras
 
 
 def row_svg(y, key, value, data, now):
-    """Returns (line, extras); extras are elements that live outside <text>."""
+    """Returns (inner, plain, extras).
+
+    `inner` is the row's markup without any positioning, `plain` is the same row
+    as flat text so the caller can measure it, and `extras` are elements that
+    have to live outside the <text> block.
+    """
     if key is None:
-        return f'<tspan x="{TEXT_X}" y="{y}" class="cc">. </tspan>', []
+        return '<tspan class="cc">. </tspan>', ". ", []
 
     if key == "@header":
-        return f'<tspan x="{TEXT_X}" y="{y}">{escape(value)}</tspan> -' + "—" * (WIDTH - len(value) - 6) + "-—-", []
+        rule = " -" + "—" * (WIDTH - len(value) - 6) + "-—-"
+        return f'<tspan>{escape(value)}</tspan>{rule}', value + rule, []
 
     if key == "@rule":
         label = f"- {value}"
-        return f'<tspan x="{TEXT_X}" y="{y}">{escape(label)}</tspan> -' + "—" * (WIDTH - len(label) - 6) + "-—-", []
+        rule = " -" + "—" * (WIDTH - len(label) - 6) + "-—-"
+        return f'<tspan>{escape(label)}</tspan>{rule}', label + rule, []
 
     if key == "@uptime":
         return uptime_row(y, now)
@@ -170,23 +192,23 @@ def row_svg(y, key, value, data, now):
         text = f"{add}++, {dele}--"
         pad = WIDTH - 2 - len("Lines of Code.Churn") - 1 - len(text)
         return (
-            f'<tspan x="{TEXT_X}" y="{y}" class="cc">. </tspan>'
+            f'<tspan class="cc">. </tspan>'
             f'<tspan class="key">Lines of Code</tspan>.<tspan class="key">Churn</tspan>:'
             f'<tspan class="cc">{dots(pad)}</tspan>'
             f'<tspan class="addColor">{add}++</tspan>, '
             f'<tspan class="delColor">{dele}--</tspan>'
-        ), []
+        ), ". Lines of Code.Churn:" + dots(pad) + text, []
 
     if value.startswith("@"):
         value = data[value[1:]]
 
     pad = WIDTH - 2 - len(key) - 1 - len(value)
     return (
-        f'<tspan x="{TEXT_X}" y="{y}" class="cc">. </tspan>'
+        f'<tspan class="cc">. </tspan>'
         f'{key_span(key)}:'
         f'<tspan class="cc">{dots(pad)}</tspan>'
         f'<tspan class="value">{escape(value)}</tspan>'
-    ), []
+    ), f". {key}:{dots(pad)}{value}", []
 
 
 def render(data, now=None):
@@ -200,13 +222,13 @@ def render(data, now=None):
         # the portrait is shorter than the field list, so centre it vertically
         art_top = TOP + ((len(ROWS) - len(art)) // 2) * ROW_H
         art_spans = "\n".join(
-            f'<tspan x="{ASCII_X}" y="{art_top + i * ROW_H}">{escape(line)}</tspan>'
-            for i, line in enumerate(art)
+            fit(ASCII_X, art_top + i * ROW_H, escape(line), len(line))
+            for i, line in enumerate(art) if line
         )
         lines, extras = [], []
         for i, (k, v) in enumerate(ROWS):
-            line, extra = row_svg(TOP + i * ROW_H, k, v, data, now)
-            lines.append(line)
+            inner, plain, extra = row_svg(TOP + i * ROW_H, k, v, data, now)
+            lines.append(fit(TEXT_X, TOP + i * ROW_H, inner, len(plain)))
             extras += extra
         rows = "\n".join(lines)
         clock = "\n".join(extras)
