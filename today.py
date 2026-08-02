@@ -18,8 +18,22 @@ import card
 # Fine-grained personal access token with All Repositories access:
 # Account permissions: none required
 # Repository permissions: read:Commit statuses, read:Contents, read:Metadata
-HEADERS = {'authorization': 'token ' + os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME']  # 'BasilSuhail'
+# ACCESS_TOKEN is optional. Without it the workflow falls back to the automatic
+# GITHUB_TOKEN, which can see every public repository -- enough for the whole card
+# except lines of code inside private repos. An unset secret arrives as an empty
+# string rather than as a missing key, hence the `or` chain rather than .get().
+TOKEN = os.environ.get('ACCESS_TOKEN') or os.environ.get('GITHUB_TOKEN')
+USER_NAME = os.environ.get('USER_NAME') or os.environ.get('GITHUB_REPOSITORY_OWNER')
+
+if not TOKEN:
+    raise SystemExit(
+        'No token. Set the ACCESS_TOKEN secret, or run this inside GitHub Actions\n'
+        'where GITHUB_TOKEN is provided automatically. Locally:\n'
+        '  ACCESS_TOKEN=$(gh auth token) USER_NAME=BasilSuhail python today.py')
+if not USER_NAME:
+    raise SystemExit('No username. Set USER_NAME, e.g. USER_NAME=BasilSuhail.')
+
+HEADERS = {'authorization': 'token ' + TOKEN}
 QUERY_COUNT = {'user_getter': 0, 'graph_repos': 0, 'recursive_loc': 0, 'loc_query': 0}
 
 
