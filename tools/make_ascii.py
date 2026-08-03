@@ -17,7 +17,10 @@ import numpy as np
 COLS, ROWS = 43, 25
 
 # ink coverage ramp, sparse -> dense (no <, >, & so the SVG stays clean)
-RAMP = " .'`^\",:;!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW8%B@$"
+# A short ramp reads far better at this size than a long one. With 60+ glyphs
+# the eye sees character noise instead of a face, because neighbouring cells
+# pick visually unrelated shapes for nearly identical brightnesses.
+RAMP = " .:-=+*#%@"
 
 
 def background_mask(gray, tol=42):
@@ -58,7 +61,7 @@ def background_mask(gray, tol=42):
 
 
 def build(path, cols=COLS, rows=ROWS, crop=(0.10, 0.00, 0.90, 0.94),
-          detail_weight=0.18, floor=0.04, polarity="dark"):
+          detail_weight=0.10, floor=0.04, polarity="dark"):
     im = Image.open(path).convert("L")
     w, h = im.size
     im = im.crop((int(w * crop[0]), int(h * crop[1]), int(w * crop[2]), int(h * crop[3])))
