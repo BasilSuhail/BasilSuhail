@@ -376,6 +376,7 @@ if __name__ == '__main__':
         'loc': total_loc[2],
         'loc_add': total_loc[0],
         'loc_del': total_loc[1],
+        'since': created_at,
     }):
         print('   wrote', os.path.basename(path))
 
