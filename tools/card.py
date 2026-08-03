@@ -133,19 +133,35 @@ def adapt(rgb, lum_range, saturate=2.0, warm=0.0):
 
 
 def portrait_spans(x, y, chars, colors, lum_range, warm):
-    """One line of the portrait, split into runs of equal colour."""
-    runs, current, start = [], None, 0
+    """One line of the portrait, split into runs of equal colour.
+
+    Spaces stay in the string and inherit whatever colour is current. They are
+    invisible either way, but dropping them would let textLength stretch the
+    remaining glyphs across the whole line and scatter the picture.
+    """
+    # Indent by moving the line's origin rather than by emitting leading spaces:
+    # whether leading whitespace survives depends on the renderer's whitespace
+    # handling, whereas an x offset is unambiguous everywhere.
+    lead = len(chars) - len(chars.lstrip(" "))
+    x, chars, colors = x + lead * CHAR_W, chars[lead:], colors[lead:]
+
+    runs, current, buf = [], None, ""
     for i, ch in enumerate(chars):
-        col = adapt(colors[i], lum_range, warm=warm) if ch != " " else None
-        if col != current:
-            if current is not None and i > start:
-                runs.append((current, chars[start:i]))
-            current, start = col, i
-    if current is not None and len(chars) > start:
-        runs.append((current, chars[start:]))
-    if not runs:
-        return ""
-    inner = "".join(f'<tspan fill="{c}">{escape(t)}</tspan>' for c, t in runs)
+        colour = current if ch == " " else adapt(colors[i], lum_range, warm=warm)
+        if colour != current and buf:
+            runs.append((current, buf))
+            buf = ""
+        current, buf = colour, buf + ch
+    if buf:
+        runs.append((current, buf))
+
+    # every run gets its own element, including the colourless leading spaces:
+    # a bare whitespace text node sitting next to a child element gets dropped by
+    # some renderers, which would shove the whole line back to the left margin
+    inner = "".join(
+        (f'<tspan fill="{c}">{escape(t)}</tspan>' if c else f'<tspan>{escape(t)}</tspan>')
+        for c, t in runs
+    )
     return fit(x, y, inner, len(chars))
 
 
