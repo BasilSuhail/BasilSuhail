@@ -90,7 +90,10 @@ ROWS = [
     ("@churn", None),
 ]
 
-BIRTHDAY = datetime.datetime(2000, 1, 3)
+# Uptime counts from the moment the GitHub account came up, not from a date of
+# birth: this is the machine's uptime, not its owner's. today.py passes the real
+# creation timestamp through render(); this is only the standalone fallback.
+DEFAULT_SINCE = datetime.datetime(2025, 9, 23, 13, 36, 28)
 
 
 def dots(pad):
@@ -202,7 +205,7 @@ def odometer(frames, start_index, slot_seconds, phase, end_col, y, css_class):
     return out
 
 
-def uptime_row(y, now):
+def uptime_row(y, now, since):
     """'XX years, XX months, XX days, HH:MM:SS' with a ticking HH:MM:SS.
 
     Returns the line itself plus the absolutely positioned clock elements, which
@@ -210,12 +213,11 @@ def uptime_row(y, now):
     """
     from dateutil import relativedelta
 
-    diff = relativedelta.relativedelta(now, BIRTHDAY)
-    date_part = '{} {}, {} {}, {} {}{}'.format(
+    diff = relativedelta.relativedelta(now, since)
+    date_part = '{} {}, {} {}, {} {}'.format(
         diff.years, 'year' + ('' if diff.years == 1 else 's'),
         diff.months, 'month' + ('' if diff.months == 1 else 's'),
-        diff.days, 'day' + ('' if diff.days == 1 else 's'),
-        ' 🎂' if (diff.months == 0 and diff.days == 0) else '')
+        diff.days, 'day' + ('' if diff.days == 1 else 's'))
 
     # the clock is a fixed 8 characters wide plus a space of slack, so the dot
     # run stays put no matter what the clock reads
@@ -241,7 +243,7 @@ def uptime_row(y, now):
     return line, plain, extras
 
 
-def row_svg(y, key, value, data, now):
+def row_svg(y, key, value, data, now, since):
     """Returns (inner, plain, extras).
 
     `inner` is the row's markup without any positioning, `plain` is the same row
@@ -261,7 +263,7 @@ def row_svg(y, key, value, data, now):
         return f'<tspan>{escape(label)}</tspan>{rule}', label + rule, []
 
     if key == "@uptime":
-        return uptime_row(y, now)
+        return uptime_row(y, now, since)
 
     if key == "@churn":
         add, dele = data["loc_add"], data["loc_del"]
@@ -289,8 +291,14 @@ def row_svg(y, key, value, data, now):
 
 
 def render(data, now=None):
-    """Write both SVGs. `data` holds the GitHub numbers, already comma-formatted."""
+    """Write both SVGs. `data` holds the GitHub numbers, already comma-formatted.
+
+    data['since'] is the account creation timestamp that Uptime counts from,
+    as returned by the API ('YYYY-MM-DDTHH:MM:SSZ').
+    """
     now = now or datetime.datetime.now()
+    since = (datetime.datetime.strptime(data['since'], '%Y-%m-%dT%H:%M:%SZ')
+             if data.get('since') else DEFAULT_SINCE)
     written = []
     for filename, theme in THEMES.items():
         with open(os.path.join(HERE, "portrait.json")) as f:
@@ -305,7 +313,7 @@ def render(data, now=None):
         )
         lines, extras = [], []
         for i, (k, v) in enumerate(ROWS):
-            inner, plain, extra = row_svg(TOP + i * ROW_H, k, v, data, now)
+            inner, plain, extra = row_svg(TOP + i * ROW_H, k, v, data, now, since)
             lines.append(fit(TEXT_X, TOP + i * ROW_H, inner, len(plain)))
             extras += extra
         rows = "\n".join(lines)
