@@ -17,7 +17,10 @@ import numpy as np
 COLS, ROWS = 43, 25
 
 # ink coverage ramp, sparse -> dense (no <, >, & so the SVG stays clean)
-RAMP = " .'`^\",:;!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW8%B@$"
+# A short ramp reads far better at this size than a long one. With 60+ glyphs
+# the eye sees character noise instead of a face, because neighbouring cells
+# pick visually unrelated shapes for nearly identical brightnesses.
+RAMP = " .:-=+*#%@"
 
 
 def background_mask(gray, tol=42):
@@ -58,7 +61,7 @@ def background_mask(gray, tol=42):
 
 
 def build(path, cols=COLS, rows=ROWS, crop=(0.10, 0.00, 0.90, 0.94),
-          detail_weight=0.18, floor=0.04, polarity="dark"):
+          detail_weight=0.10, floor=0.04, polarity="dark"):
     im = Image.open(path).convert("L")
     w, h = im.size
     im = im.crop((int(w * crop[0]), int(h * crop[1]), int(w * crop[2]), int(h * crop[3])))
@@ -113,3 +116,36 @@ if __name__ == "__main__":
     print("\n".join(lines))
     if len(sys.argv) > 2:
         preview(lines, sys.argv[2])
+
+
+def build_colored(path, cols=COLS, rows=ROWS, **kw):
+    """Return (chars, colors): the ASCII portrait plus a source colour per cell.
+
+    The glyph carries the shape and the fill carries the colour, sampled from the
+    photo itself, so the hair, skin, shirt and tie keep roughly the hues they have
+    in the original rather than being hand-picked.
+    """
+    lines = build(path, cols=cols, rows=rows, **kw)
+
+    crop = kw.get("crop", (0.11, 0.05, 0.89, 1.0))
+    im = Image.open(path).convert("RGB")
+    w, h = im.size
+    im = im.crop((int(w * crop[0]), int(h * crop[1]), int(w * crop[2]), int(h * crop[3])))
+    small = im.resize((cols, rows), Image.LANCZOS)
+    px = np.asarray(small, dtype=np.float32)
+
+    colors = []
+    for r in range(rows):
+        row = []
+        for c in range(cols):
+            row.append(tuple(int(v) for v in px[r, c]))
+        colors.append(row)
+    return lines, colors
+
+
+def write_portrait(path, out, **kw):
+    import json
+    chars, colors = build_colored(path, **kw)
+    with open(out, "w") as f:
+        json.dump({"chars": chars, "colors": colors}, f)
+    return chars, colors

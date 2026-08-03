@@ -15,8 +15,14 @@ the line sideways.
 The animation clock starts when the browser loads the image, not when the file
 was built, so the ticking is only as accurate as the last workflow run -- see the
 cron in build.yaml.
+
+The portrait is coloured from the photograph itself: tools/make_ascii.py stores an
+average colour per character cell alongside the glyphs, and adapt() pushes each
+one into a brightness band that reads against the theme background while keeping
+its hue, so the hair, skin, shirt and tie stay recognisably their own colours.
 """
 import datetime
+import json
 import os
 from xml.sax.saxutils import escape
 
@@ -30,9 +36,23 @@ ASCII_X, ROW_H, TOP = 15, 20, 30
 
 THEMES = {
     "dark_mode.svg": dict(bg="#161b22", fg="#c9d1d9", key="#ffa657", value="#a5d6ff",
-                          add="#3fb950", dele="#f85149", cc="#616e7f", art="ascii_dark.txt"),
+                          add="#3fb950", dele="#f85149", cc="#616e7f",
+                          site="#7ee787", social="#79c0ff", mail="#ffa198", pop="#d2a8ff",
+                          lum=(0.38, 1.0), warm=0.16),
     "light_mode.svg": dict(bg="#f6f8fa", fg="#24292f", key="#953800", value="#0a3069",
-                           add="#1a7f37", dele="#cf222e", cc="#c2cfde", art="ascii_light.txt"),
+                           add="#1a7f37", dele="#cf222e", cc="#c2cfde",
+                           site="#1a7f37", social="#0969da", mail="#cf222e", pop="#8250df",
+                           lum=(0.08, 0.58), warm=0.30),
+}
+
+# Rows whose value gets its own colour instead of the default blue.
+ACCENTS = {
+    "Portfolio": "site",
+    "LinkedIn": "social",
+    "Email.Personal": "mail",
+    "Contributions": "pop",
+    "Shell": "pop",
+    "Hobbies.Offline": "site",
 }
 
 # ('key', 'value') pairs. '@'-prefixed keys are handled specially below.
@@ -63,10 +83,10 @@ ROWS = [
     ("LinkedIn", "basilsuhail"),
     (None, None),
     ("@rule", "GitHub Stats"),
-    ("Repos", "@repos"),
+    ("Repos.Public", "@repos"),
     ("Repos.Contributed", "@contrib"),
     ("Contributions", "@contributions"),
-    ("Lines of Code on GitHub", "@loc"),
+    ("Lines of Public Code", "@loc"),
     ("@churn", None),
 ]
 
@@ -89,6 +109,60 @@ def key_span(key):
 # line outside the viewBox and cropped it -- so instead of trusting a metric, each
 # line carries a textLength and the renderer is made to fit it.
 CHAR_W = 10.0
+
+
+def adapt(rgb, lum_range, saturate=2.0, warm=0.0):
+    """Pull a colour sampled from the photo into a range readable on the card.
+
+    Hue is preserved -- hair stays brown, tie stays navy, skin stays warm -- while
+    the brightness is pushed into a band that reads against the background, and
+    saturation is lifted because averaging a whole cell washes it out. `warm`
+    then tilts the result towards amber, which a webcam frame under indoor light
+    needs before it stops reading as grey.
+    """
+    r, g, b = (c / 255 for c in rgb)
+    grey = 0.299 * r + 0.587 * g + 0.114 * b
+    r, g, b = (grey + (c - grey) * saturate for c in (r, g, b))
+    r, g, b = r * (1 + warm), g * (1 + warm * 0.35), b * (1 - warm * 0.9)
+    lo, hi = lum_range
+    target = lo + (hi - lo) * grey
+    scale = target / max(grey, 0.02)
+    r, g, b = (min(1.0, max(0.0, c * scale)) for c in (r, g, b))
+    # quantise so neighbouring cells collapse into one run instead of one span each
+    return "#%02x%02x%02x" % tuple(round(c * 255 / 24) * 24 for c in (r, g, b))
+
+
+def portrait_spans(x, y, chars, colors, lum_range, warm):
+    """One line of the portrait, split into runs of equal colour.
+
+    Spaces stay in the string and inherit whatever colour is current. They are
+    invisible either way, but dropping them would let textLength stretch the
+    remaining glyphs across the whole line and scatter the picture.
+    """
+    # Indent by moving the line's origin rather than by emitting leading spaces:
+    # whether leading whitespace survives depends on the renderer's whitespace
+    # handling, whereas an x offset is unambiguous everywhere.
+    lead = len(chars) - len(chars.lstrip(" "))
+    x, chars, colors = x + lead * CHAR_W, chars[lead:], colors[lead:]
+
+    runs, current, buf = [], None, ""
+    for i, ch in enumerate(chars):
+        colour = current if ch == " " else adapt(colors[i], lum_range, warm=warm)
+        if colour != current and buf:
+            runs.append((current, buf))
+            buf = ""
+        current, buf = colour, buf + ch
+    if buf:
+        runs.append((current, buf))
+
+    # every run gets its own element, including the colourless leading spaces:
+    # a bare whitespace text node sitting next to a child element gets dropped by
+    # some renderers, which would shove the whole line back to the left margin
+    inner = "".join(
+        (f'<tspan fill="{c}">{escape(t)}</tspan>' if c else f'<tspan>{escape(t)}</tspan>')
+        for c, t in runs
+    )
+    return fit(x, y, inner, len(chars))
 
 
 def fit(x, y, inner, chars):
@@ -192,24 +266,25 @@ def row_svg(y, key, value, data, now):
     if key == "@churn":
         add, dele = data["loc_add"], data["loc_del"]
         text = f"{add}++, {dele}--"
-        pad = WIDTH - 2 - len("Lines of Code.Churn") - 1 - len(text)
+        pad = WIDTH - 2 - len("Public Code.Churn") - 1 - len(text)
         return (
             f'<tspan class="cc">. </tspan>'
-            f'<tspan class="key">Lines of Code</tspan>.<tspan class="key">Churn</tspan>:'
+            f'<tspan class="key">Public Code</tspan>.<tspan class="key">Churn</tspan>:'
             f'<tspan class="cc">{dots(pad)}</tspan>'
             f'<tspan class="addColor">{add}++</tspan>, '
             f'<tspan class="delColor">{dele}--</tspan>'
-        ), ". Lines of Code.Churn:" + dots(pad) + text, []
+        ), ". Public Code.Churn:" + dots(pad) + text, []
 
     if value.startswith("@"):
         value = data[value[1:]]
 
     pad = WIDTH - 2 - len(key) - 1 - len(value)
+    accent = ACCENTS.get(key, "value")
     return (
         f'<tspan class="cc">. </tspan>'
         f'{key_span(key)}:'
         f'<tspan class="cc">{dots(pad)}</tspan>'
-        f'<tspan class="value">{escape(value)}</tspan>'
+        f'<tspan class="{accent}">{escape(value)}</tspan>'
     ), f". {key}:{dots(pad)}{value}", []
 
 
@@ -218,14 +293,15 @@ def render(data, now=None):
     now = now or datetime.datetime.now()
     written = []
     for filename, theme in THEMES.items():
-        with open(os.path.join(HERE, theme["art"])) as f:
-            art = f.read().split("\n")
+        with open(os.path.join(HERE, "portrait.json")) as f:
+            portrait = json.load(f)
+        art, art_colors = portrait["chars"], portrait["colors"]
 
         # the portrait is shorter than the field list, so centre it vertically
         art_top = TOP + ((len(ROWS) - len(art)) // 2) * ROW_H
         art_spans = "\n".join(
-            fit(ASCII_X, art_top + i * ROW_H, escape(line), len(line))
-            for i, line in enumerate(art) if line
+            portrait_spans(ASCII_X, art_top + i * ROW_H, line, art_colors[i], theme["lum"], theme["warm"])
+            for i, line in enumerate(art) if line.strip()
         )
         lines, extras = [], []
         for i, (k, v) in enumerate(ROWS):
@@ -247,6 +323,10 @@ size-adjust: 109%;
 }}
 .key {{fill: {theme['key']};}}
 .value {{fill: {theme['value']};}}
+.site {{fill: {theme['site']};}}
+.social {{fill: {theme['social']};}}
+.mail {{fill: {theme['mail']};}}
+.pop {{fill: {theme['pop']};}}
 .addColor {{fill: {theme['add']};}}
 .delColor {{fill: {theme['dele']};}}
 .cc {{fill: {theme['cc']};}}
