@@ -5,14 +5,6 @@
   </picture>
 </a>
 
-<!-- The contact rows inside the card cannot be clicked: GitHub embeds the card
-     as an <img>, and browsers disable links inside an image. These are the
-     working versions of the same three. -->
-
-[![Portfolio](https://img.shields.io/badge/basilsuhail.com-161b22?style=for-the-badge&logo=safari&logoColor=a5d6ff&labelColor=161b22)](https://basilsuhail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=a5d6ff&labelColor=161b22)](https://linkedin.com/in/basilsuhail)
-[![Email](https://img.shields.io/badge/Email-161b22?style=for-the-badge&logo=gmail&logoColor=a5d6ff&labelColor=161b22)](mailto:basilsuhailkhan@gmail.com)
-
 <div align="center">
 
 **POV: you catch your cofounder spending 45 seconds on his personal life instead of our AI startup...**

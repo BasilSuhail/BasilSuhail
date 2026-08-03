@@ -50,13 +50,18 @@ def simple_request(func_name, query, variables):
 
 def graph_repos(owner_affiliation):
     """
-    Uses GitHub's GraphQL v4 API to return the total repository count
+    Uses GitHub's GraphQL v4 API to return the public repository count.
+
+    Restricted to public repositories on purpose, so the card reports the same
+    figure whichever token runs it. Counting private repos would make the number
+    depend on whether ACCESS_TOKEN happens to be set, and would not match what a
+    visitor sees on the profile anyway.
     """
     query_count('graph_repos')
     query = '''
     query ($owner_affiliation: [RepositoryAffiliation], $login: String!) {
         user(login: $login) {
-            repositories(first: 1, ownerAffiliations: $owner_affiliation) {
+            repositories(first: 1, ownerAffiliations: $owner_affiliation, privacy: PUBLIC) {
                 totalCount
             }
         }
@@ -153,7 +158,7 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
     query = '''
     query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
         user(login: $login) {
-            repositories(first: 60, after: $cursor, ownerAffiliations: $owner_affiliation) {
+            repositories(first: 60, after: $cursor, ownerAffiliations: $owner_affiliation, privacy: PUBLIC) {
             edges {
                 node {
                     ... on Repository {
