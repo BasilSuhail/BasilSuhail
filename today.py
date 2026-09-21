@@ -124,10 +124,11 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
         print(f'   {owner}/{repo_name}: {request.status_code}, retrying with a page of {page // 2}')
         time.sleep(3)
 
-    force_close_file(data, cache_comment)  # saves what is currently in the file before this program crashes
     if request.status_code == 403:
+        force_close_file(data, cache_comment)
         raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
-    raise Exception('recursive_loc() has failed with a', request.status_code, request.text, QUERY_COUNT)
+    print(f'   {owner}/{repo_name}: giving up after persistent {request.status_code}, skipping')
+    return None
 
 
 def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits):
@@ -222,10 +223,10 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
         if repo_hash == hashlib.sha256(edges[index]['node']['nameWithOwner'].encode('utf-8')).hexdigest():
             try:
                 if int(commit_count) != edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']:
-                    # if commit count has changed, update loc for that repo
                     owner, repo_name = edges[index]['node']['nameWithOwner'].split('/')
                     loc = recursive_loc(owner, repo_name, data, cache_comment)
-                    data[index] = repo_hash + ' ' + str(edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']) + ' ' + str(loc[2]) + ' ' + str(loc[0]) + ' ' + str(loc[1]) + '\n'
+                    if loc is not None:
+                        data[index] = repo_hash + ' ' + str(edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']) + ' ' + str(loc[2]) + ' ' + str(loc[0]) + ' ' + str(loc[1]) + '\n'
             except TypeError:  # If the repo is empty
                 data[index] = repo_hash + ' 0 0 0 0\n'
     with open(filename, 'w') as f:
